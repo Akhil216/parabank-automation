@@ -1,0 +1,22 @@
+{
+  "name": "parabank-e2e",
+  "version": "1.0.0",
+  "description": "E2E automation suite for ParaBank signup and login flows",
+  "author": "QA Engineer",
+  "license": "MIT",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags '@smoke'",
+    "test:e2e": "cucumber-js --tags '@end-to-end'",
+    "test:negative": "cucumber-js --tags '@negative'",
+    "test:headed": "HEADLESS=false cucumber-js",
+    "test:report": "cucumber-js && open reports/test-report.html"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.44.0",
+    "playwright": "^1.44.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0"
+  }
+}
